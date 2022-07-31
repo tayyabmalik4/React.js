@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float IN Html And CSS Tutorial</title>
+</head>
+<style>
+    *{
+box-sizing: border-box;
+    }
+    .container{
+        width: 900px;
+        border: 3px solid purple;
+        background-color: aliceblue;
+        margin: 30px auto;
+
+    }
+    .item{
+        border: 3px solid gray;
+        margin: 12px 3px;
+        padding: 12px 3px;
+        background-color: rgb(238, 226, 226);
+
+    }
+    #frout{
+        float: left;
+        width: 48%;
+    }
+    #computer{
+        float: left;
+        width: 48%;
+    }
+    #stationary{
+        /* float: left; */
+        clear: both;
+        width: 100%;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Float And Clear Tutorial in CSS</h1>
+        <div id="frout" class="item">
+            <h1>Frouit</h1>
+            <p id="froutpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, porro! Nulla animi ipsum rerum eveniet debitis magni unde dolore adipisci labore atque. Perferendis omnis porro alias cumque distinctio debitis aperiam.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h1>Computer</h1>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam saepe veritatis, possimus voluptatum delectus hic expedita velit dolorem sunt omnis iusto, ratione quo recusandae, explicabo illum officiis odio sint maiores.
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h1>Stationary</h1>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi non cumque dolorem unde harum cum voluptatibus dolorum dolores excepturi ducimus facilis iusto odit, quisquam consectetur animi nisi veritatis corporis magni.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

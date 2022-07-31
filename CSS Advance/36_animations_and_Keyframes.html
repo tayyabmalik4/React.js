@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and keyframes</title>
+</head>
+<style>
+    .container{
+        background-color: antiquewhite;
+
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        position: relative;
+        /* animation-name: tayyab; */
+        /* animation-name: tayyab2;
+        animation-duration: 2s;
+        animation-iteration-count: 2; */
+        /* animation-iteration-count: infinite; */
+        /* if we want to fill the width then we use fill mode property and the width which we apply in to variable is applied */
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: backwards; */
+        /* animation-fill-mode:alternate; */
+        /* animation-timing-function: ease-in; */
+        /* animation-timing-function: ease-out; */
+        /* animation in one line short hand mode*/
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-itration-count animation-fill-mode; */
+        animation: tayyab2 3s ease-in 1s 4 forwards;
+    }
+    @keyframes tayyab {
+        form{
+            width: 200px;
+        }
+        to{
+            width: 400px;
+        }
+    }
+    @keyframes tayyab2 {
+        0%{
+            top:0px;
+            left: 0px;
+        }
+        30%{
+            top: 250px;
+            left: 0px;
+        }
+        60%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0px;
+            left: 250px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is the box
+        </div>
+    </div>
+</body>
+</html>

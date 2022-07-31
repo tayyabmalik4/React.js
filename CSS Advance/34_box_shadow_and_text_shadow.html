@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow And Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+
+    }
+    .box{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        background-color: azure;
+        /* box-shadow: x-axes y-axes blur-radius spread-radiuscolor ; */
+        box-shadow: 10px 10px 10px yellow;
+        box-shadow: 10px 10px green;
+        box-shadow: -10px -10px 10px yellow;
+        box-shadow: -10px -10px 10px 10px yellow;
+        box-shadow: -10px -10px 10px 10px yellow,-10px -10px 10px 10px green;
+        /* if we want to shadow inside of box then we use inset attribute */
+        box-shadow: inset -10px -10px 10px 10px yellow,inset -20px -20px 10px 10px green;;  
+    }
+    h2{
+        text-shadow: 2px 1px  white;
+        text-shadow: 2px 1px 3px green ;
+        text-shadow: -2px -1px 3px green ;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h2>Box1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam deleniti dolorem tenetur eius illum, id quod quasi architecto impedit sint cumque corrupti repudiandae, nostrum animi eaque dicta nobis iste officiis vitae autem! Cupiditate, voluptatum.</p>
+        </div>
+        <div class="box" id="box-2">
+            <h2>Box2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam deleniti dolorem tenetur eius illum, id quod quasi architecto impedit sint cumque corrupti repudiandae, nostrum animi eaque dicta nobis iste officiis vitae autem! Cupiditate, voluptatum.</p>
+        </div>
+        <div class="box" id="box-3">
+            <h2>Box3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam deleniti dolorem tenetur eius illum, id quod quasi architecto impedit sint cumque corrupti repudiandae, nostrum animi eaque dicta nobis iste officiis vitae autem! Cupiditate, voluptatum.</p>
+        </div>
+    </div>
+</body>
+</html>

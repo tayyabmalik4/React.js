@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area in CSS</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:         
+        'navbar navbar navbar navbar'
+        'section section section aside';
+    }
+    .item{
+        padding: 5px;
+        background-color: aqua;
+        border: 2px solid black;
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home Contect Us About Services
+        </div>
+        <div id="section" class="item">
+           <p> Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequuntur voluptas animi, nisi suscipit aspernatur, fuga iste laborum nihil incidunt obcaecati ipsa enim, ipsam adipisci optio rerum doloremque. Amet optio perferendis error ratione officia? </p>
+        </div>
+        <div id="aside" class="item">
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam consequatur totam nemo similique, quos ea delectus officia aspernatur sed debitis alias culpa tempora possimus voluptatem maiores consectetur ex perspiciatis fugiat accusamus, asperiores sint. Dolorem, aliquam consequatur illo ipsum soluta distinctio molestias laborum. Quas adipisci, quae debitis iusto est reiciendis molestias corporis expedita repellat harum officia officiis ex molestiae tenetur distinctio, quod id impedit aliquid possimus. Commodi voluptates fuga odit maiores deleniti, nisi vero debitis? Dolor quibusdam amet, magnam facere rem, voluptates numquam voluptatem, doloribus sequi doloremque debitis quae! Minima necessitatibus perspiciatis sed ex natus ratione aliquam voluptatum molestiae suscipit vel, iure ab consequatur similique sit cum est, molestias laudantium incidunt. Illo accusantium ad quibusdam, deserunt magni eum perferendis aperiam beatae dolores libero quisquam quae quis vero expedita possimus molestias quod dolorum laborum tempora cupiditate provident quam harum amet ducimus. Maxime natus numquam corrupti vero voluptatum incidunt, possimus nisi, atque vitae dicta autem mollitia, quo consequuntur quod quaerat saepe repellat nulla. Voluptatem, quos. Ab, quo commodi nemo fuga laborum provident quae dolore iure architecto placeat velit quos rem ullam in! Voluptatem officia veritatis magnam soluta quibusdam sit reiciendis blanditiis nulla natus, culpa adipisci sint voluptate eaque esse similique enim earum aut perferendis voluptas. Soluta magnam maxime impedit non officia fugit. Optio consequatur, atque aperiam et, nihil omnis a doloribus perferendis quos officiis officia quasi perspiciatis, iusto possimus dolorem explicabo ducimus dignissimos modi? Dolore expedita cupiditate beatae aspernatur rerum necessitatibus animi fuga neque dolores ipsam nobis quisquam placeat quia, officiis accusamus accusantium, ipsa, nesciunt nemo itaque obcaecati adipisci rem! Aliquid aliquam architecto maxime molestias et? Eos aspernatur corporis consequuntur aperiam nemo a quisquam. Voluptatum assumenda aliquam cupiditate eligendi labore minima nemo corrupti porro iure fugiat alias asperiores laborum quam, quae animi harum at dolore repellendus molestiae delectus. Pariatur ipsam, animi voluptas aliquam quod dolores unde modi. Natus sunt suscipit quo expedita reiciendis? Harum veniam optio voluptas iusto odio neque officia magnam tenetur quis doloremque! Impedit ex quaerat nobis non cumque ab obcaecati pariatur ad quam libero porro suscipit veritatis, cupiditate vitae reiciendis eaque mollitia dolore corporis animi eveniet incidunt? Numquam molestias quisquam atque fugit consectetur ipsum neque ipsam esse? Reprehenderit, unde harum? Tempora quae adipisci iste eligendi est harum a vel quos facere quo. Debitis, aliquam velit ad officia voluptate vel, ipsam a pariatur laboriosam neque tempore unde aliquid labore dolorem qui perferendis! Excepturi tenetur corrupti ducimus vero non a voluptates?</p>
+        </div>
+        <!-- <div class="item">This is the Items of Grid 1</div>
+        <div class="item">This is the Items of Grid 2</div>
+        <div class="item">This is the Items of Grid 3</div>
+        <div class="item">This is the Items of Grid 4</div>
+        <div class="item">This is the Items of Grid 5</div>
+        <div class="item">This is the Items of Grid 6</div>
+        <div class="item">This is the Items of Grid 7</div>
+        <div class="item">This is the Items of Grid 8</div>
+        <div class="item">This is the Items of Grid 9</div>
+        <div class="item">This is the Items of Grid 10</div>
+        <div class="item">This is the Items of Grid 11</div>
+        <div class="item">This is the Items of Grid 12</div>
+        <div class="item">This is the Items of Grid 13</div>
+        <div class="item">This is the Items of Grid 14</div> -->
+    </div>
+</body>
+</html>

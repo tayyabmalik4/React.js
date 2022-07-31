@@ -1,0 +1,195 @@
+/* this style is applay all of the body */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Styling Variables */
+:root{
+    --primary-color: blue;
+    --danger-color: red;
+}
+/* Working with Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar .logo img{
+    height: 3rem;
+    width: 3rem;
+    margin: 10px 10px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    padding:3px 30px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    color: white;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    height: 400px;
+
+}
+#home::before{
+    content: "";
+    background: url('/imgs/3.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+} 
+
+/* Services Section */
+
+/* #services-container{
+    margin-top: 9rem;
+} */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    background-color: #f5f7f9;
+    border-radius: 23px;
+    justify-content: space-evenly;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 60px;
+}
+#services .box p{
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', sans-serif;
+}
+.section-client{
+    position: relative;
+}
+.section-client::before{
+    content: "";
+    background: url('/imgs/7.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* top: 0px;
+    left: 0px; */
+    opacity: 0.4;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 10px;
+}
+.clients img{
+    height: 124px;
+}
+/* Contect Us Section */
+#section-contect{
+    position: relative;
+}
+#section-contect::before{
+    content: "";
+    background: url('/imgs/8.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#contect-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 23px;
+}
+#contect-box form{
+    width: 40%;
+    font-size: 1.3rem;
+}
+#contect-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', sans-serif;
+}
+#contect-box input,#contect-box textarea{
+    padding: 0.5rem;
+    width: 100%;
+}
+footer .center{
+    background-color: gray;
+    margin-top: 5px;
+    padding: 9px 13px;
+    font-size: 20px;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', sans-serif;
+    font-size: 2.8rem;
+    padding: 10px;
+}
+.h-secendary{
+    font-family: 'Bree Serif', sans-serif;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    margin: 17px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+

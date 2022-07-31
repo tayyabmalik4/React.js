@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And After Selection in CSS Tutorial</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        background-color: black;
+        color: white;
+    }
+    header::before{
+        background: url("1.jpg") no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.5;
+
+    }
+    .section1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    /* .section1::before{
+        content: "this is the content";
+    } */
+
+    .navigation{
+        display: flex;
+    }
+    .navigation li{
+        list-style: none;
+        padding: 34px 23px ;
+        
+    }
+    
+
+</style>
+<body>
+    <header>
+        <ul class="navigation">
+            <li class="item">Home</li>
+            <li class="item">Contect Us</li>
+            <li class="item">Products</li>
+            <li class="item">Services</li>
+        </ul>
+    </header>
+    <section class="section1">
+        <h1>Welcome to Programming Channal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus, officia illo ea ipsam excepturi incidunt, sit iusto accusamus necessitatibus, inventore mollitia assumenda beatae ut fugit illum commodi. Sequi officia deserunt tempora quod? Deleniti eos itaque dignissimos eveniet, perferendis ipsam officia quaerat magnam ipsa similique dolore velit, enim quas debitis.</p>
+    </section>
+
+    
+</body>
+</html>

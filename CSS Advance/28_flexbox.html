@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Tutorial</title>
+</head>
+<style>
+    .container{
+        height: 544px;
+        width: 100%;
+        border: 3px solid black;
+        background-color: aliceblue;
+        /* Now starting the flex property */
+        display: flex;
+        flex-direction: row;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* we write the flex direction and flex-wrap in one line */
+        flex-flow: row wrap;
+        /* Now we talk about justify content */
+        justify-content: center;
+        justify-content: space-evenly;
+        justify-content: space-between;
+        justify-content: space-around;
+
+        /* Now we talk about align item property of css */
+        align-items: center;
+        align-items: flex-end;
+        align-items: flex-start;
+        align-items: stretch;
+
+
+    }
+    .item{
+        height: 100px;
+        width: 100px;
+        border: 2px solid green;
+        background-color: blanchedalmond;
+        margin: 10px;
+        padding: 10px;
+    }
+    #item-1{
+        /* higher the order, later is shows up in the container */
+        /* order: 2; */
+    }
+    #item-2{
+        /* flex-grow: 2; */
+        /* flex-shrink: 3; */
+        /* flex-basis: 320px; */
+        /* when flex-direction is set to row then flex bases handle width */
+        /* When flex-direction is set to colume then flex bases handle height */
+
+        /* one of the property of flex is to write the flex-grow, flex-shrink and flex-bases combine */
+        /* flex: grow shrink flex-bases */
+        /* flex: 2 2 255px; */
+        /* one of the property of flex is to align-self and this property is apply only perticular item */
+        align-self: center;
+        align-self: flex-end;
+        align-self: flex-start;
+    }
+    #item-3{
+        /* flex-grow: 3;
+        flex-shrink: 2; */
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">First Item</div>
+        <div class="item" id="item-2">Secend Item</div>
+        <div class="item" id="item-3">Third Item</div>
+        <div class="item" id="item-4">Fourth Item</div>
+        <div class="item" id="item-5">Fivth Item</div>
+        <div class="item" id="item-6">Sixth Item</div>
+    </div>
+</body>
+</html>

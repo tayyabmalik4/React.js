@@ -1,0 +1,7 @@
+Download and install node
+Download and install vs code
+Download Extantion React and Redux in chrom
+Download Extention Thunder Client in vs code(This extation is testing for APIs and this is like a Postman)
+Download Extantion ES7 React/Redux/React-Native Snippets
+Download Extantion Prettier Code Formatter
+Download Extantion Breket Pair Colorization
